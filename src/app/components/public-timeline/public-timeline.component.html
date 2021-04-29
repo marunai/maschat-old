@@ -1,0 +1,18 @@
+<h2>PublicTimeline</h2>
+<ol class="public_timeline">
+  <li *ngFor="let status of timeline"  (click)="onClick(status.id)">
+    <div class="status">
+      <div class="status_avatar">
+        <img [src]="status.account.avatar" />
+      </div>
+      <div classs="status_area">
+        <div class="status_info">
+          {{status.account.display_name}} {{status.account.acct}}
+        </div>
+        <div class="status_content">
+          {{status.content}}
+        </div>
+      </div>
+    </div>
+  </li>
+</ol>

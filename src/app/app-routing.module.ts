@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { PublicTimelineComponent } from './components/public-timeline/public-timeline.component';
+
+const routes: Routes = [
+  { path: 'timelines/public', component: PublicTimelineComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
