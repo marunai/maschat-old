@@ -1,0 +1,12 @@
+<div class="timeline">
+  <mat-toolbar class="timeline-toolbar">
+    <button mat-icon-button class="timeline-toolbar-menu">
+       <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+  <mat-form-field appearance="fill" class="timeline-form">
+    <textarea matInput cdkTextareaAutosize #text style="font-size:20px;"></textarea>
+    <mat-icon matSuffix>message</mat-icon>
+  </mat-form-field>
+</div>

@@ -1,17 +1,17 @@
-.public-timeline {
+.local-timeline {
     width: 100%;
     background-color: rgb(20,20,20);
 }
-.public-timeline-card {
+.local-timeline-card {
     background-color: rgb(40,40,40);
 }
-.public-timeline-card-title {
+.local-timeline-card-title {
     color: white;
 }
-.public-timeline-card-subtitle {
+.local-timeline-card-subtitle {
     color: lightgray;
 }
-.public-timeline-card-content {
+.local-timeline-card-content {
     font-size: 16px;
     color: lightgray;
 }

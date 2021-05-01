@@ -1,0 +1,14 @@
+<div class="local-timeline">
+    <mat-list *ngFor="let status of timeline | reverse" class="local-timeline-list">
+      <mat-card class="local-timeline-card">
+        <mat-card-header>
+          <img mat-card-avatar [src]='status.account.avatar' />
+          <mat-card-title class="local-timeline-card-title">{{status.account.display_name}}</mat-card-title>
+          <mat-card-subtitle class="local-timeline-card-subtitle">{{status.account.acct}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class=local-timeline-card-content>
+          <div [innerHTML]='status.content'></div>
+        </mat-card-content>
+      </mat-card>
+    </mat-list>
+    </div>
